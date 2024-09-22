@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Proyectos - Portafolio</title>
+  <title>Promedio - Portafolio</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="gallery-page">
+<body class="gallery-single-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
@@ -52,11 +52,11 @@
         <ul>
           <li><a href="index.html">Inicio<br></a></li>
           <li><a href="about.html">Conoceme</a></li>
-          <li class="dropdown"><a href="gallery.html"  class="active"><span>Proyectos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="gallery.html" class="active"><span>Proyectos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#website">Sitios web</a></li>
-              <li><a href="#app">Aplicaciones moviles</a></li>
-              <li><a href="#minisoft">Mini programas</a></li>
+              <li><a href="gallery.html#website">Sitios web</a></li>
+              <li><a href="gallery.html#app">Aplicaciones moviles</a></li>
+              <li><a href="gallery.html#minisoft">Mini programas</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contactame</a></li>
@@ -79,7 +79,8 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Proyectos</h1>
+              <h1>Promedio - Mini programa</h1>
+              <p class="mb-0">Programa en python para calcular el promedio de calificaciones de uno o más alumnos.</p>
             </div>
           </div>
         </div>
@@ -88,52 +89,86 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Inicio</a></li>
-            <li class="current">Proyectos</li>
+            <li class="current">Promedio</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
+    <!-- Gallery Details Section -->
+    <section id="gallery-details" class="gallery-details section">
 
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up">
 
-        <div class="row gy-4 justify-content-center">
-          <h2 id="website" style="padding: 15px;">Sitios web</h2>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/siteblog.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-               <a href="blog.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
 
-          <h2 id="app"  style="padding: 15px;">Aplicaciones moviles</h2>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/app.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-               <a href="app.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
+            <div class="swiper-slide">
+              <img src="assets/img/gallery/prom2.PNG" alt="">
             </div>
-          </div><!-- End Gallery Item -->
-          <h2 id="minisoft" style="padding: 15px;">Mini programas</h2>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/claculadora.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="promedio.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/gallery/prom1.PNG" alt="">
             </div>
-          </div><!-- End Gallery Item -->
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Decripción:</h2>
+              <p>
+                Una aplicación sencilla de consola en python para calcular el promedio de calificaciones de n estudiantes con m calificaciones.</p>
+              <p>
+                Para este trabajo se usan variables y la funcion repetitiva for, ademas de las opraciones aritmeticas basicas, por lo cual se necesita conocimiento basico de python.
+              </p>
+              <p>
+               El usuario recibe dos preguntas, cuantos alumnos? y cuantas calificaciones?, para poder realizar el calculo del promedio del alumno o los alumnos. 
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h3>Información del proyecto</h3>
+              <ul>
+                <li><strong>Categoria</strong> Mini programas</li>
+                <li><strong>Cliente</strong> Tarea escolar</li>
+                <li><strong>Fecha del proyecto</strong> 9 Nov, 2020</li>
+                <li><strong>Codigo del proyecto</strong> <a href="https://drive.google.com/file/d/1pDjdC0y_ud7PEeoT3PbMMtV6ERv79F7r/view?usp=sharing">Link Drive</a></li>
+                
+              </ul>
+            </div>
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Gallery Section -->
+    </section><!-- /Gallery Details Section -->
 
   </main>
 
