@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Proyectos - Portafolio</title>
+  <title>Bloodmatch - Portafolio</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="gallery-page">
+<body class="gallery-single-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
@@ -52,11 +52,11 @@
         <ul>
           <li><a href="index.html">Inicio<br></a></li>
           <li><a href="about.html">Conoceme</a></li>
-          <li class="dropdown"><a href="gallery.html"  class="active"><span>Proyectos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="gallery.html" class="active"><span>Proyectos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#website">Sitios web</a></li>
-              <li><a href="#app">Aplicaciones moviles</a></li>
-              <li><a href="#minisoft">Mini programas</a></li>
+              <li><a href="gallery.html#website">Sitios web</a></li>
+              <li><a href="gallery.html#app">Aplicaciones moviles</a></li>
+              <li><a href="gallery.html#minisoft">Mini programas</a></li>
             </ul>
           </li>
           <li><a href="contact.html">Contactame</a></li>
@@ -79,7 +79,8 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Proyectos</h1>
+              <h1>Bloodmatch - Aplicación movil</h1>
+              <p class="mb-0">App para dispositivos moviles, donde se puede interactuar para buscar donadores de sangre.</p>
             </div>
           </div>
         </div>
@@ -88,52 +89,107 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Inicio</a></li>
-            <li class="current">Proyectos</li>
+            <li class="current">Bloodmatch</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
+    <!-- Gallery Details Section -->
+    <section id="gallery-details" class="gallery-details section">
 
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up">
 
-        <div class="row gy-4 justify-content-center">
-          <h2 id="website" style="padding: 15px;">Sitios web</h2>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/siteblog.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-               <a href="blog.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
 
-          <h2 id="app"  style="padding: 15px;">Aplicaciones moviles</h2>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/app.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-               <a href="app.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
+            <div class="swiper-slide">
+              <img src="assets/img/gallery/app1.PNG" alt="">
             </div>
-          </div><!-- End Gallery Item -->
-          <h2 id="minisoft" style="padding: 15px;">Mini programas</h2>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/claculadora.png" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/gallery/app2.PNG" alt="">
             </div>
-          </div><!-- End Gallery Item -->
+
+            <div class="swiper-slide">
+              <img src="assets/img/gallery/app3.PNG" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/gallery/app4.PNG" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/img/gallery/app5.PNG" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/gallery/app6.PNG" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/gallery/app7.PNG" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/gallery/app8.PNG" alt="">
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Decripción:</h2>
+              <p>
+                El objetivo de la aplicacion es funcionar como un medio de comunicacion entre personas que buscan donar sangre, en un medio intuitivo y facil de usar.</p>
+              <p>
+                Para este proyecto se desarrollo en react-native, es necesario instalar node y react, tambien se debe de tener conocimientos en JavaScript.
+              </p>
+              <p>
+              La aplicacion cuenta con un login y cinco opciones en el menu principal: Inicio, Mapa, Chat, Perfil y configuraciones.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h3>Información del proyecto</h3>
+              <ul>
+                <li><strong>Categoria</strong> Aplicaciones moviles</li>
+                <li><strong>Cliente</strong> Proyecto servicio social</li>
+                <li><strong>Fecha del proyecto</strong> 20 Mayo, 2024</li>
+                <li><strong>Prototipo del proyecto</strong> <a href="https://www.figma.com/proto/kLrhb9qTwf3Br43Gh0EtE5/BLOOD-2v?node-id=66-5&t=IJnrmqEWr6kXbOuo-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=59%3A25&show-proto-sidebar=1">Link Figma</a></li>
+                
+              </ul>
+            </div>
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Gallery Section -->
+    </section><!-- /Gallery Details Section -->
 
   </main>
 
